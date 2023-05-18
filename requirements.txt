@@ -1,0 +1,5 @@
+tqdm
+requests
+json
+PIL
+boto3
