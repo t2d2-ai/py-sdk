@@ -4,6 +4,9 @@ T2D2 api class
 
 ```python
 T = T2D2(credentials)
+T.set_user(user_id)
+T.set_organization(organization_id)
+T.set_project(project_id)
 ```
 
 ```text

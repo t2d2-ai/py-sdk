@@ -8,6 +8,7 @@ import requests
 
 class RequestType(Enum):
     """Request type class"""
+
     GET = auto()
     PUT = auto()
     POST = auto()
@@ -16,14 +17,13 @@ class RequestType(Enum):
 
 class T2D2(object):
     """Main T2D2 Class"""
+
     base_url: str = "https://develop.t2d2.ai/api-v2/"
     headers: dict
     project: dict
     authToken: str
     s3_base_url: str
-    aws_region: str = "us-east-1"
     bucket: str
-    project_details: dict
 
     def __init__(self, credentials, base_url="https://develop.t2d2.ai/api-v2/"):
         """Initialize / login"""
@@ -117,7 +117,6 @@ class T2D2(object):
         self.project = p
 
         self.s3_base_url = p["config"]["s3_base_url"]
-        self.aws_region = p["config"]["aws_region"]
         res = urlparse(self.s3_base_url)
         self.bucket = res.netloc.split(".")[0]
 
