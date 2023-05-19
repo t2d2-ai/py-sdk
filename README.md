@@ -6,6 +6,7 @@ T2D2 api class
 T = T2D2(credentials)
 ```
 
+```text
 - users                 create, get, update, delete
 --  api_keys            create, get, update, delete
 --  notifications       create, get, update, delete
@@ -26,3 +27,4 @@ T = T2D2(credentials)
 --  tags                create, get, update, delete
 --  tools               create, get, update, delete
 --  labels              create, get, update, delete
+```
