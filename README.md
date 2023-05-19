@@ -10,8 +10,10 @@ T = T2D2(credentials)
 --  api_keys            create, get, update, delete
 --  notifications       create, get, update, delete
 --  tasks               create, get, update, delete
+
 - organizations         create, get, update, delete, add_user, update_user, remove_user
 --  licenses            create, get, update, delete
+
 - projects              create, get, update, delete, add_user, update_user, remove_user
 --  images              create, get, update, delete, upload
 --  orthomosaics        create, get, update, delete, upload
